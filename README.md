@@ -25,10 +25,10 @@ Hệ thống xử lý tuần tự qua 9 bước (Modules) cốt lõi:
 9. **Module 9 (Quỹ đạo bóng):** Theo vết và vẽ đường bay của quả bóng. *(Đóng góp mới)*
 
 ## 📊 Kết quả Thực nghiệm Đáng chú ý
-- **Phát hiện bóng (Ball Detection):** 76,10% (EPL) | 63,83% (V-League).
-- **Phân loại đội bóng:** Ổn định ở mức > 81% trên mọi điều kiện video.
-- **Phép chiếu Homography:** Tỷ lệ lỗi cực thấp (0,32% ở EPL, 0% ở V-League).
-- **Tốc độ xử lý:** ~0,10 - 0,17 FPS (Xử lý Offline trên GPU NVIDIA L4).
+- **Phát hiện bóng (Ball Detection):** 84,2% (EPL) | 43,9% (V-League).
+- **Phân loại đội bóng:** Độ chính xác đạt 91,2% (EPL) | 78,3% (V-League).
+- **Lỗi phép chiếu Homography:** Tỷ lệ lỗi rất thấp ở EPL (0,8%) nhưng tăng lên 8,5% ở V-League do thiếu điểm mốc.
+- **Tốc độ xử lý:** ~18,7 FPS (Xử lý Offline trên GPU NVIDIA L4).
 
 ## 🚀 Hướng dẫn Sử dụng (Google Colab)
 Toàn bộ mã nguồn đã được đóng gói thành một file Jupyter Notebook duy nhất để dễ dàng chạy thử nghiệm.
