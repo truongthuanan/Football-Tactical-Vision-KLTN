@@ -5,8 +5,7 @@
 
 An automated, end-to-end computer vision pipeline for football tactical analysis. This system processes broadcast football videos to detect players, classify teams, track movements, and project the real-world action onto a 2D tactical minimap in near real-time.
 
-![Demo Video](demo.gif)
-*(⚠️ **Note for author:** Please record a 10-second GIF of your output video showing the Minimap/Voronoi and replace this placeholder!)*
+demo.gif
 
 ---
 
