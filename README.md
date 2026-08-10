@@ -9,17 +9,6 @@ An automated, end-to-end computer vision pipeline for football tactical analysis
 <img width="800" height="492" alt="demo" src="https://github.com/user-attachments/assets/3925f559-7b7d-4067-91b7-0696f28d2332" />
 ---
 
-## ✨ Key Features
-
-*   **Robust Object Detection & Tracking:** Detects players, referees, and the ball using fine-tuned **YOLOv8x**, while maintaining consistent IDs across frames using **ByteTrack**.
-*   **Unsupervised Team Classification:** Automatically clusters and classifies teams based on jersey colors using **SigLIP** and **UMAP**—no manual color input required!
-*   **Spatial Projection (Homography):** Detects 32 pitch keypoints to compute a Homography matrix (DLT + RANSAC), mapping camera view coordinates to a 2D top-down minimap.
-*   **Advanced Tactical Visualizations:**
-    *   🗺️ **2D Minimap:** Real-time player positioning.
-    *   🕸️ **Voronoi Diagrams:** Analyzes space control and pressing zones.
-    *   🔥 **KDE Heatmaps:** Tracks player density and hotspots over time.
-    *   ⚽ **Ball Trajectory:** Interpolates and visualizes ball movement.
-
 ## 🛠️ Tech Stack
 
 *   **Deep Learning:** PyTorch, Ultralytics (YOLOv8, YOLOv8-Pose)
@@ -27,18 +16,3 @@ An automated, end-to-end computer vision pipeline for football tactical analysis
 *   **Tracking & Clustering:** ByteTrack, SigLIP, UMAP, scikit-learn
 *   **Data Processing & Visualization:** NumPy, Matplotlib, SciPy
 
-## 📊 Performance & Results
-
-The system was rigorously evaluated across multi-domain datasets (English Premier League, Shopee Cup, V-League) to analyze the impact of *Domain Shift* and *Domino Errors* in low-angle broadcasts.
-
-*   **Player & Ball Detection:** `mAP50 = 88.0%` (Trained on custom annotated dataset)
-*   **Pitch Keypoint Detection:** `mAP50-Pose = 99.5%` (32 keypoints)
-*   **Processing Speed:** `18.7 FPS` (Evaluated on NVIDIA L4 GPU)
-
-## 📂 Repository Structure
-
-```text
-├── 1_Main_Pipeline_Inference.ipynb       # Full 9-module inference pipeline (Run this for demo)
-├── 2_Train_Player_Detector_YOLOv8...     # Training notebook for Object Detection
-├── 3_Train_Pitch_Keypoint_Detector...    # Training notebook for Keypoint Detection
-└── README.md
